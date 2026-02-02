@@ -1,13 +1,29 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<String> books1 = new ArrayList<>();
+        books1.add("1984");
+        books1.add("Brave New World");
+        books1.add("The Hobbit");
+
+        ArrayList<String> books2 = new ArrayList<>();
+        books2.add("The Hobbit");
+        books2.add("Dune");
+        books2.add("1984");
+
+
+        Set<String> uniqueBooks = new LinkedHashSet<>();
+
+        uniqueBooks.addAll(books1);
+        uniqueBooks.addAll(books2);
+
+        ArrayList<String> mergedBooks = new ArrayList<>(uniqueBooks);
+
+        System.out.println(mergedBooks);
     }
 }
