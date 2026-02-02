@@ -1,9 +1,8 @@
-
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class Main {
+public class MergeBooks {
     public static void main(String[] args) {
 
         ArrayList<String> books1 = new ArrayList<>();
@@ -16,7 +15,7 @@ public class Main {
         books2.add("Dune");
         books2.add("1984");
 
-
+        // LinkedHashSet сохраняет порядок и убирает дубликаты
         Set<String> uniqueBooks = new LinkedHashSet<>();
 
         uniqueBooks.addAll(books1);
