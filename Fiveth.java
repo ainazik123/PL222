@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Five {
+public class Fiveth {
     public static void main(String[] args) {
 
         ArrayList<String> colors = new ArrayList<>();
